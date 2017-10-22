@@ -38,9 +38,9 @@ kubectl apply \
   -f http://docs.projectcalico.org/v2.3/getting-started/kubernetes/installation/hosted/kubeadm/1.6/calico.yaml \
   --kubeconfig /etc/kubernetes/admin.conf
 
-#kubectl apply \
-#  -f https://git.io/weave-kube-1.6 \
-#  --kubeconfig /etc/kubernetes/admin.conf
+kubectl apply \
+  -f https://raw.githubusercontent.com/kris-nova/kubicorn/weave-do/bootstrap/vpn/weave-kube-1.6 \
+  --kubeconfig /etc/kubernetes/admin.conf
 
 # Root
 mkdir -p ~/.kube
